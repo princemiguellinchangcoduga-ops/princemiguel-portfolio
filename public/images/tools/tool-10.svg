@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="gemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1BA0E2"/>
+      <stop offset="50%" stop-color="#9B72CB"/>
+      <stop offset="100%" stop-color="#D96570"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" x="4" y="4" rx="14" fill="#0F1117"/>
+  <path d="M32 14c0 9.94-8.06 18-18 18 9.94 0 18 8.06 18 18 0-9.94 8.06-18 18-18-9.94 0-18-8.06-18-18z" fill="url(#gemGrad)"/>
+</svg>
