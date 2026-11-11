@@ -59,7 +59,7 @@ export const services: Service[] = [
       'Kinetic typography, motion accents & sound design',
     ],
     tools: [tools.toolC, tools.toolB, tools.toolD],
-    thumbnail: { src: '/images/covers/ai-motion-north-yard.svg', alt: 'AI motion graphics preview', width: 1600, height: 1000 },
+    thumbnail: cover('ai-ads-collection', 'AI-assisted product ads and motion graphics'),
   },
   {
     id: 'service-3',
@@ -98,6 +98,6 @@ export const services: Service[] = [
       'Computer vision ML classification prototypes',
     ],
     tools: [tools.toolG, tools.toolK, tools.toolL],
-    // Clean text-only for IT as requested: no interface mockup
+    thumbnail: { src: '/images/covers/tech-prototyping.svg', alt: 'Machine learning, IoT, and computer vision project preview', width: 1600, height: 1000 },
   },
 ]

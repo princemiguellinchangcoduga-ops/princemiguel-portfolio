@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="60" x2="1480" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1D2B"/>
+      <stop offset="1" stop-color="#07121D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="250" y1="190" x2="1300" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55D7F2"/>
+      <stop offset="1" stop-color="#6B91FF"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#132B3B"/>
+      <stop offset="1" stop-color="#0C1C29"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="36" fill="url(#bg)"/>
+  <circle cx="1290" cy="176" r="310" fill="#1E5470" fill-opacity=".24"/>
+  <path d="M0 780C300 710 508 823 808 744c262-69 478-197 792-144" stroke="url(#accent)" stroke-opacity=".28" stroke-width="2"/>
+  <path d="M0 830C300 760 508 873 808 794c262-69 478-197 792-144" stroke="url(#accent)" stroke-opacity=".14" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="94" y="112" fill="#A4C7D9" font-size="20" font-weight="700" letter-spacing="7">COMPUTER SCIENCE · SELECTED BUILDS</text>
+    <text x="92" y="209" fill="#F3F8FB" font-size="64" font-weight="700" letter-spacing="-2">TECH SUPPORT &amp; PROTOTYPING</text>
+    <text x="96" y="258" fill="#9BB0BE" font-size="25" letter-spacing="1">Practical systems built around real campus needs.</text>
+  </g>
+  <g>
+    <rect x="94" y="338" width="440" height="486" rx="24" fill="url(#panel)" stroke="#335A70" stroke-width="2"/>
+    <rect x="580" y="338" width="440" height="486" rx="24" fill="url(#panel)" stroke="#335A70" stroke-width="2"/>
+    <rect x="1066" y="338" width="440" height="486" rx="24" fill="url(#panel)" stroke="#335A70" stroke-width="2"/>
+  </g>
+  <g stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 618h326M150 658h244M150 698h286" opacity=".52"/>
+    <path d="M637 618h326M637 658h244M637 698h286" opacity=".52"/>
+    <path d="M1124 618h326M1124 658h244M1124 698h286" opacity=".52"/>
+    <rect x="163" y="414" width="302" height="144" rx="16" opacity=".75"/>
+    <path d="m187 526 59-48 43 18 50-56 44 37 56-41"/>
+    <circle cx="1300" cy="486" r="68" opacity=".8"/>
+    <path d="m1271 486 20 20 40-46"/>
+  </g>
+  <g fill="#F3F8FB" font-family="Arial, Helvetica, sans-serif">
+    <text x="150" y="760" font-size="28" font-weight="700">TINGAFRESH ML</text>
+    <text x="637" y="760" font-size="28" font-weight="700">SMARTPARK IoT</text>
+    <text x="1124" y="760" font-size="28" font-weight="700">FACELOG ATTENDANCE</text>
+  </g>
+  <g fill="#82A5B8" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="3">
+    <text x="150" y="790">MACHINE LEARNING</text>
+    <text x="637" y="790">SENSORS &amp; SYSTEMS</text>
+    <text x="1124" y="790">COMPUTER VISION</text>
+  </g>
+</svg>

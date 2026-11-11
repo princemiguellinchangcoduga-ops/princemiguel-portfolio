@@ -55,26 +55,24 @@
 }
 .wb__grid {
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: repeat(4, clamp(150px, 14.5cqi, 210px));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, clamp(210px, 18cqi, 250px));
   grid-template-areas:
-    'web web web web web web app app app tic tic tic'
-    'web web web web web web app app app tic tic tic'
-    'aut aut aut aut fw  fw  app app app bp  bp  bp'
-    'aut aut aut aut ai  ai  bot bot bot bp  bp  bp';
+    'featured case-studies process screens'
+    'websites experiments side-projects apps';
   gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.wb__cell[data-area='websites'] { grid-area: web; }
-.wb__cell[data-area='apps'] { grid-area: app; }
-.wb__cell[data-area='featured'] { grid-area: tic; }
-.wb__cell[data-area='screens'] { grid-area: aut; }
-.wb__cell[data-area='case-studies'] { grid-area: fw; }
-.wb__cell[data-area='process'] { grid-area: bp; }
-.wb__cell[data-area='side-projects'] { grid-area: ai; }
-.wb__cell[data-area='experiments'] { grid-area: bot; }
+.wb__cell[data-area='featured'] { grid-area: featured; }
+.wb__cell[data-area='case-studies'] { grid-area: case-studies; }
+.wb__cell[data-area='process'] { grid-area: process; }
+.wb__cell[data-area='screens'] { grid-area: screens; }
+.wb__cell[data-area='websites'] { grid-area: websites; }
+.wb__cell[data-area='experiments'] { grid-area: experiments; }
+.wb__cell[data-area='side-projects'] { grid-area: side-projects; }
+.wb__cell[data-area='apps'] { grid-area: apps; }
 
 .wb__cell {
   min-width: 0;
@@ -135,8 +133,8 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top left;
+  object-fit: contain;
+  object-position: center;
   transition: transform var(--dur-slow) var(--ease-spring);
 }
 /* White captures on Onyx are softened so they do not glare. */
@@ -176,14 +174,12 @@
 @container (max-width: 700px) {
   .wb__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: 220px 180px 180px 200px 170px 160px;
+    grid-template-rows: repeat(4, clamp(180px, 48cqi, 220px));
     grid-template-areas:
-      'web web'
-      'app tic'
-      'app bp'
-      'aut aut'
-      'fw  ai'
-      'bot bot';
+      'featured case-studies'
+      'process screens'
+      'websites experiments'
+      'side-projects apps';
     gap: 10px;
   }
 }
@@ -203,34 +199,6 @@
     .wb .wb__cell {
       animation-timeline: view();
       animation-range: entry 0% entry 70%;
-    }
-  }
-}
-
-/*
- * Parallax: each capture is the deeper layer and drifts inside its frame while the tile crosses the
- * screen. The picture is 110% tall with 5%
- * spare above and below; the drift is +-4% of its height, so no edge ever shows. `translate`, not
- * `transform`, so the hover zoom composes with it. Compositor only; off under reduced motion.
- */
-@keyframes wb-drift {
-  from {
-    translate: 0 -4%;
-  }
-  to {
-    translate: 0 4%;
-  }
-}
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .wb__media > img {
-      top: -5%;
-      height: 110%;
-      animation: wb-drift linear both;
-    }
-    .wb .wb__media > img {
-      animation-timeline: view();
-      animation-range: cover 0% cover 100%;
     }
   }
 }
