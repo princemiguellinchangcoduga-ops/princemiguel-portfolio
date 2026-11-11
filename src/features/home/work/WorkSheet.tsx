@@ -250,15 +250,32 @@ function Single({ chapter }: { chapter: WorkChapter }) {
   return (
     <div className="sh__single">
       {lead ? (
-        <a className="sh__shot sh__shot--lead" href={link?.href ?? lead.src} target="_blank" rel="noopener" data-reveal>
+        <a
+          className="sh__shot sh__shot--lead"
+          href={link?.href ?? lead.src}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={link ? `${link.label} (opens in a new tab)` : lead.alt}
+          data-reveal
+        >
           <img src={lead.src} alt={lead.alt} width={lead.width} height={lead.height} decoding="async" />
+          {link ? (
+            <span className="sh__lead-play" aria-hidden="true">
+              <Play size={15} weight="fill" />
+              Watch video
+              <ArrowUpRight size={14} weight="bold" />
+            </span>
+          ) : null}
         </a>
       ) : null}
       {link ? (
-        <a className="btn-line sh__live" href={link.href} target="_blank" rel="noopener" data-reveal>
-          {link.label}
-          <ArrowUpRight size={16} weight="bold" aria-hidden />
-        </a>
+        <div className="sh__live-wrap" data-reveal>
+          <a className="btn-line sh__live" href={link.href} target="_blank" rel="noopener noreferrer">
+            {link.label}
+            <ArrowUpRight size={16} weight="bold" aria-hidden />
+          </a>
+          <span className="sh__live-note">Opens the video on Facebook in a new tab.</span>
+        </div>
       ) : null}
       <ul className="sh__gallery">
         {gallery.map((img) => (

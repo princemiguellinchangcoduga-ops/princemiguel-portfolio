@@ -121,7 +121,7 @@ export const workChapters: WorkChapter[] = [
     marks: [tools.toolC, tools.toolB, siteMark],
     items: [aseanVideo],
     lead: cover('video-asean', 'ASEAN Creators Digital Storytelling — 3rd Place Winner', 'video thumbnail'),
-    link: { label: 'Watch 3rd Place Video on Facebook', href: 'https://www.facebook.com/share/v/1C4XBRYJrx/', external: true },
+    link: { label: 'Watch full video on Facebook', href: 'https://www.facebook.com/share/v/1C4XBRYJrx/', external: true },
   },
   {
     id: 'case-studies',

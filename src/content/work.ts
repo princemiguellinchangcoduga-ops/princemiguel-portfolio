@@ -38,7 +38,7 @@ export const featuredProject = {
   kicker: 'Award-Winning Video Edit',
   title: 'ASEAN Creators: Digital Storytelling',
   summary: 'Bagged 3rd Place in the Commission on Higher Education (CHED) Regional Office VI ASEAN Creators Digital Storytelling Competition. Produced and edited Entry #5 for Filamer Christian University.',
-  link: { label: 'Watch 3rd Place Video on Facebook', href: 'https://www.facebook.com/share/v/1C4XBRYJrx/', external: true } satisfies LinkRef,
+  link: { label: 'Watch full video on Facebook', href: 'https://www.facebook.com/share/v/1C4XBRYJrx/', external: true } satisfies LinkRef,
   lead: cover('video-asean', 'ASEAN Creators Digital Storytelling — 3rd Place Winner', 'video thumbnail'),
 }
 

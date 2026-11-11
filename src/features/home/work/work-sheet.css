@@ -299,7 +299,50 @@ a:hover .sh__name svg {
   gap: 28px;
 }
 .sh__shot--lead {
+  position: relative;
   aspect-ratio: 16 / 10;
+  cursor: pointer;
+}
+.sh__shot--lead:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.sh__lead-play {
+  position: absolute;
+  top: clamp(12px, 2.4vw, 28px);
+  right: clamp(12px, 2.4vw, 28px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 0 17px;
+  border: 1px solid rgb(255 255 255 / 0.5);
+  border-radius: 999px;
+  background: rgb(9 17 26 / 0.92);
+  box-shadow: 0 5px 22px rgb(0 0 0 / 0.24);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: transform 180ms ease, background-color 180ms ease;
+  pointer-events: none;
+}
+.sh__shot--lead:hover .sh__lead-play,
+.sh__shot--lead:focus-visible .sh__lead-play {
+  transform: translateY(-2px);
+  background: var(--accent-ink);
+}
+.sh__live-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+.sh__live-note {
+  color: var(--ink-2);
+  font-size: 13px;
+  line-height: 1.4;
 }
 .sh__live {
   justify-self: start;
@@ -388,5 +431,15 @@ a:hover .sh__name svg {
   .sh__groups {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 48px 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .sh__live-wrap,
+  .sh__live {
+    width: 100%;
+  }
+  .sh__live {
+    justify-content: center;
   }
 }
