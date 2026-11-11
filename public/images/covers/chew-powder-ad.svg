@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="112" y1="24" x2="1430" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#f4eee4"/><stop offset="1" stop-color="#d8e7df"/></linearGradient>
+    <linearGradient id="jar" x1="920" y1="310" x2="1220" y2="760" gradientUnits="userSpaceOnUse"><stop stop-color="#fffdf7"/><stop offset="1" stop-color="#d6e8df"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1600v1000H0z"/>
+  <circle cx="1130" cy="500" r="320" fill="#6eae8f" fill-opacity=".12"/>
+  <path d="M0 820c204-102 374-151 551-151 189 0 258 107 424 107 204 0 388-99 625-250v474H0V820Z" fill="#c2d9cd"/>
+  <rect x="1020" y="258" width="260" height="68" rx="24" fill="#26392f"/>
+  <path d="M1046 316h208l38 372c4 44-31 81-75 81h-135c-44 0-79-37-75-81l39-372Z" fill="url(#jar)" stroke="#7da88e" stroke-width="3"/>
+  <rect x="1074" y="453" width="150" height="118" rx="12" fill="#285441"/>
+  <text x="1149" y="496" text-anchor="middle" fill="#f4fff6" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2">CHEW</text>
+  <text x="1149" y="528" text-anchor="middle" fill="#b8e8c9" font-family="Arial,sans-serif" font-size="16" letter-spacing="1">POWDER</text>
+  <text x="104" y="156" fill="#456252" font-family="Arial,sans-serif" font-size="24" letter-spacing="7">AI PRODUCT AD · VIDEO</text>
+  <text x="104" y="750" fill="#173c2c" font-family="Arial,sans-serif" font-size="75" font-weight="700" letter-spacing="-3">CHEW POWDER</text>
+  <text x="108" y="808" fill="#537361" font-family="Arial,sans-serif" font-size="25" letter-spacing="4">AI-ASSISTED PRODUCT STORY</text>
+  <circle cx="1385" cy="148" r="48" stroke="#476e58" stroke-opacity=".6" stroke-width="2"/>
+  <path d="m1376 127 29 21-29 21v-42Z" fill="#234d37"/>
+</svg>

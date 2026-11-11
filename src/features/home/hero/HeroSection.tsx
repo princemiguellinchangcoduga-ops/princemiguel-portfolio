@@ -40,7 +40,7 @@ export function HeroSection() {
             // A new-tab click (Ctrl / Cmd / middle) keeps the link's own behaviour.
             if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey) return
             event.preventDefault()
-            scrollToSection('contact')
+            scrollToSection(homeHero.cta.to.split('#')[1] ?? 'work')
           }}
         >
           {homeHero.cta.label}

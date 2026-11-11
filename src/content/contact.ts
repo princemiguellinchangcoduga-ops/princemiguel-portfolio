@@ -6,7 +6,7 @@ export const contactPage = {
   eyebrow: 'Contact',
   titleThin: "Let's connect &",
   titleBold: 'work together.',
-  lede: 'Looking for graphic design, event video editing, or IT technical support? Reach out and I will reply within 24 hours.',
+  lede: 'For video editing, AI-assisted ads, visual design, or media work, send a project note by email or Facebook.',
   faqEyebrow: 'FAQs',
   faqTitle: 'Quick answers',
   faqSub: 'Have an open question? Send a note below.',

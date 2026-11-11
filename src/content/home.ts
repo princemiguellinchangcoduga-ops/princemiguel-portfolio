@@ -22,7 +22,7 @@ import {
 export const homeHero = {
   headlineThin: 'Creative Designer &',
   headlineBold: 'Video Editor.',
-  subhead: 'Creative Video Editor & CS Magna Cum Laude graduate producing retention-driven short/long-form edits, AI commercials, kinetic typography, and high-impact event visuals.',
+  subhead: 'Creator-first video edits, AI-assisted commercials, and motion visuals — shaped by a computer science background and two years in campus media leadership.',
   cta: { label: 'View My Work', to: '/#work' },
 }
 
@@ -50,7 +50,7 @@ export const homeManifesto = {
 export const homeSections = {
   work: {
     eyebrow: 'Selected work',
-    title: 'Designs, edits and digital builds.',
+    title: 'Video, AI ads, design and digital builds.',
   },
   proof: {
     eyebrow: 'Proof',
@@ -125,11 +125,11 @@ export const workChapters: WorkChapter[] = [
   },
   {
     id: 'case-studies',
-    title: 'AI Video Production',
-    line: 'Generative AI commercials & cinematic horror shorts.',
+    title: 'AI Ads & Motion',
+    line: 'AI-assisted product ads and motion graphics.',
     count: aiVideoProjects.length,
-    unit: 'films',
-    description: 'Cutting-edge AI-assisted video workflows combining generative visual prompting, synthetic voiceovers, talking-head avatars, and cinematic sound design.',
+    unit: 'projects',
+    description: 'AI-assisted product advertising and motion-led visual experiments, with embedded previews for the North Yard pickleball concept and chew powder product spot.',
     marks: [tools.toolD, tools.toolE, tools.toolF],
     items: aiVideoProjects,
   },
@@ -145,11 +145,11 @@ export const workChapters: WorkChapter[] = [
   },
   {
     id: 'process',
-    title: 'YouTube Long-Form Edits',
-    line: 'Retro VHS aesthetic & clean multi-cam interview pacing.',
+    title: 'YouTube & Creator Edits',
+    line: '70+ videos edited for YouTube creators.',
     count: youtubeEdits.length,
-    unit: 'edits',
-    description: 'Long-form YouTube video editing featuring authentic retro VHS archival treatments and clean, polished interview narrative pacing.',
+    unit: 'videos',
+    description: 'More than 70 videos edited for YouTube creators, spanning short and long-form storytelling. These samples show a retro VHS treatment and a clean interview edit.',
     marks: [tools.toolB, tools.toolC],
     items: youtubeEdits,
   },

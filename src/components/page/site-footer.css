@@ -17,6 +17,9 @@
 .site-foot > p {
   margin: 0;
 }
+.site-foot__visits {
+  font-variant-numeric: tabular-nums;
+}
 .site-foot > nav {
   display: flex;
   gap: 4px 20px;

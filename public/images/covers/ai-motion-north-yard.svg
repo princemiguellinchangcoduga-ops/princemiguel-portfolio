@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#092c23"/><stop offset=".6" stop-color="#124738"/><stop offset="1" stop-color="#07160f"/></linearGradient>
+    <linearGradient id="court" x1="275" y1="236" x2="1260" y2="827" gradientUnits="userSpaceOnUse"><stop stop-color="#76efb4" stop-opacity=".23"/><stop offset="1" stop-color="#2b8069" stop-opacity=".02"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1600v1000H0z"/>
+  <path d="M190 284h940l230 424H418L190 284Z" fill="url(#court)" stroke="#82f7c0" stroke-opacity=".56" stroke-width="3"/>
+  <path d="m418 708 174-424m768 424-230-424M190 284h940M304 496h966" stroke="#8af9c6" stroke-opacity=".52" stroke-width="3"/>
+  <path d="M0 780 420 650l320 116 396-188 464 134" stroke="#91ffd1" stroke-opacity=".32" stroke-width="4"/>
+  <text x="110" y="148" fill="#b9f3d7" font-family="Arial,sans-serif" font-size="24" letter-spacing="7">MOTION GRAPHIC · AI VISUALS</text>
+  <text x="104" y="812" fill="#f1fff7" font-family="Arial,sans-serif" font-size="92" font-weight="700" letter-spacing="-5">NORTH YARD</text>
+  <text x="112" y="872" fill="#acf0d1" font-family="Arial,sans-serif" font-size="25" letter-spacing="4">PICKLEBALL SYSTEM</text>
+  <circle cx="1390" cy="154" r="50" stroke="#9bffd1" stroke-opacity=".64" stroke-width="2"/>
+  <path d="m1381 133 29 21-29 21v-42Z" fill="#e7fff4"/>
+</svg>

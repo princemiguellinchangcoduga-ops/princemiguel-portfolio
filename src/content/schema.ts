@@ -140,6 +140,8 @@ export type WorkItem = {
   summary: string
   image?: Image
   href?: string
+  /** Public embedded preview URL (for example a Google Drive video preview). */
+  previewUrl?: string
   /** What it runs on (AI builds). */
   stack?: string
   status?: BuildStatus

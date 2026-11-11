@@ -9,10 +9,10 @@ export type LegalDoc = {
   sections: LegalSection[]
 }
 
-/** What this site actually stores and loads. Keep in sync with src/lib/storage.ts and src/lib/analytics.ts. */
+/** What this site actually stores and loads. Keep in sync with its browser preferences and visit counter. */
 export const privacyPolicy: LegalDoc = {
   title: 'Privacy Policy',
-  updated: 'October 13, 2026',
+  updated: 'November 12, 2026',
   intro: `This policy covers ${site.url.replace('https://', '')}, the portfolio of ${site.name} trading as ${site.brand}.`,
   sections: [
     {
@@ -31,7 +31,7 @@ export const privacyPolicy: LegalDoc = {
     {
       heading: 'Analytics',
       paragraphs: [
-        'No invasive third-party tracking cookies or personal data profiling tools are employed on this portfolio.',
+        'The site displays an aggregate visit counter. It records one increment per browser tab session and stores only the total count; it does not send names, email addresses, or a visitor ID to the counter. The counter uses Upstash Redis when configured. Standard hosting logs may still include network request metadata.',
       ],
     },
     {

@@ -3,8 +3,8 @@ import { tools } from './tools'
 
 export const servicesPage = {
   eyebrow: 'Services',
-  title: 'Creative design, video production, and IT solutions.',
-  lede: 'From high-impact graphics and dynamic event video edits to modern web applications and technical support.',
+  title: 'Video editing, AI ads, design, and media.',
+  lede: 'From creator-focused video edits and AI-assisted ads to campus graphics, event visuals, and technical projects.',
 }
 
 const cover = (id: string, label: string): Image => ({
@@ -55,11 +55,11 @@ export const services: Service[] = [
     outcome: 'High Retention',
     bullets: [
       'Short & long-form retention pacing (Reels, TikTok, YouTube)',
-      'Generative AI video workflows (Higgsfield, Kling, Runway)',
+      'AI video workflows (Higgsfield, Kling, Runway, Google Veo)',
       'Kinetic typography, motion accents & sound design',
     ],
     tools: [tools.toolC, tools.toolB, tools.toolD],
-    thumbnail: cover('video-drive-2', 'AI Video Production & Commercial Ads'),
+    thumbnail: { src: '/images/covers/ai-motion-north-yard.svg', alt: 'AI motion graphics preview', width: 1600, height: 1000 },
   },
   {
     id: 'service-3',

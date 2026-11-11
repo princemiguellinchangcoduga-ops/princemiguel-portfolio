@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="116" y1="12" x2="1470" y2="990" gradientUnits="userSpaceOnUse"><stop stop-color="#111822"/><stop offset="1" stop-color="#07090d"/></linearGradient>
+    <linearGradient id="light" x1="230" y1="270" x2="1260" y2="766" gradientUnits="userSpaceOnUse"><stop stop-color="#5ab6ec" stop-opacity=".54"/><stop offset="1" stop-color="#1d2940" stop-opacity=".06"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1600v1000H0z"/>
+  <circle cx="1174" cy="350" r="390" fill="url(#light)"/>
+  <path d="m0 790 246-196 164 80 211-276 213 218 221-267 199 193 346-249v707H0V790Z" fill="#0d1118" stroke="#5baed9" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M97 760h1404M259 760l145-254 127 254m115 0 170-320 180 320m104 0 128-215 131 215" stroke="#8dcdf0" stroke-opacity=".4" stroke-width="3"/>
+  <text x="112" y="150" fill="#a6c7d8" font-family="Arial,sans-serif" font-size="24" letter-spacing="7">DOCUMENTARY · STORYTELLING</text>
+  <text x="104" y="802" fill="#edf6fa" font-family="Arial,sans-serif" font-size="86" font-weight="700" letter-spacing="-4">DARK BARRIO STORIES</text>
+  <text x="110" y="862" fill="#a6bdc8" font-family="Arial,sans-serif" font-size="25" letter-spacing="4">B-ROLL · VOICE · EDITING</text>
+  <circle cx="1390" cy="146" r="50" stroke="#93d8fb" stroke-opacity=".52" stroke-width="2"/>
+  <path d="m1381 125 29 21-29 21v-42Z" fill="#e9f8ff"/>
+</svg>

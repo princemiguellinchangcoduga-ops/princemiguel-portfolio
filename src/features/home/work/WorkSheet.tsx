@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router'
-import { ArrowRight, ArrowUpRight, X } from '@phosphor-icons/react'
+import { ArrowRight, ArrowUpRight, Play, X } from '@phosphor-icons/react'
 import { HeadMeta } from '@/app/PageMeta'
 import { chapterPath, workChapters } from '@/content/home'
 import type { WorkChapter, WorkItem } from '@/content/schema'
@@ -148,34 +148,71 @@ function Grid({ items, lead }: { items: WorkItem[]; lead: boolean }) {
     <ul className="sh__grid">
       {items.map((item, i) => (
         <li key={item.id} className={lead && i === 0 ? 'sh__item sh__item--lead' : 'sh__item'} data-reveal>
-          <ItemLink item={item}>
-            <span className={item.href ? 'sh__shot' : 'sh__shot sh__shot--contain'}>
-              {item.image ? (
-                <img
-                  src={item.image.src}
-                  alt={item.image.alt}
-                  width={item.image.width}
-                  height={item.image.height}
-                  loading={i < 3 ? 'eager' : 'lazy'}
-                  decoding="async"
-                />
-              ) : null}
-            </span>
-            <span className="sh__cap">
-              <span className="wk-count">
-                {item.kicker}
-                {item.status ? <span className="sh__status">{item.status}</span> : null}
+          {item.previewUrl ? <PreviewItem item={item} index={i} /> : (
+            <ItemLink item={item}>
+              <span className={item.href ? 'sh__shot' : 'sh__shot sh__shot--contain'}>
+                {item.image ? (
+                  <img
+                    src={item.image.src}
+                    alt={item.image.alt}
+                    width={item.image.width}
+                    height={item.image.height}
+                    loading={i < 3 ? 'eager' : 'lazy'}
+                    decoding="async"
+                  />
+                ) : null}
               </span>
-              <h3 className="sh__name">
-                {item.name}
-                {item.href ? <ArrowUpRight size={16} weight="bold" aria-hidden /> : null}
-              </h3>
-              <span className="sh__sum">{item.summary}</span>
-            </span>
-          </ItemLink>
+              <span className="sh__cap">
+                <span className="wk-count">
+                  {item.kicker}
+                  {item.status ? <span className="sh__status">{item.status}</span> : null}
+                </span>
+                <h3 className="sh__name">
+                  {item.name}
+                  {item.href ? <ArrowUpRight size={16} weight="bold" aria-hidden /> : null}
+                </h3>
+                <span className="sh__sum">{item.summary}</span>
+              </span>
+            </ItemLink>
+          )}
         </li>
       ))}
     </ul>
+  )
+}
+
+/** A real, lazy-loaded playable preview that does not contact Drive until the visitor asks to play. */
+function PreviewItem({ item, index }: { item: WorkItem; index: number }) {
+  const [playing, setPlaying] = useState(false)
+  return (
+    <div className="sh__link sh__preview-item">
+      <div className="sh__shot sh__shot--preview">
+        {playing ? (
+          <iframe
+            src={item.previewUrl}
+            title={`${item.name} video preview`}
+            loading="lazy"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
+        ) : (
+          <>
+            {item.image ? <img src={item.image.src} alt={item.image.alt} width={item.image.width} height={item.image.height} loading={index < 3 ? 'eager' : 'lazy'} decoding="async" /> : null}
+            <button type="button" className="sh__play" onClick={() => setPlaying(true)} aria-label={`Play ${item.name} preview`}>
+              <Play size={15} weight="fill" aria-hidden />
+              Play preview
+            </button>
+          </>
+        )}
+      </div>
+      <span className="sh__cap">
+        <span className="wk-count">{item.kicker}</span>
+        <h3 className="sh__name">{item.name}</h3>
+        <span className="sh__sum">{item.summary}</span>
+        {item.href ? <a className="sh__external" href={item.href} target="_blank" rel="noopener noreferrer">Open original <ArrowUpRight size={14} weight="bold" aria-hidden /></a> : null}
+      </span>
+    </div>
   )
 }
 

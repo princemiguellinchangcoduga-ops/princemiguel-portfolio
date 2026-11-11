@@ -149,6 +149,53 @@
   object-position: top center;
   transition: transform var(--dur-slow) var(--ease-spring);
 }
+.sh__shot--preview {
+  position: relative;
+  background: #071014;
+}
+.sh__shot--preview iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #071014;
+}
+.sh__play {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid rgb(255 255 255 / 0.36);
+  border-radius: 999px;
+  background: rgb(8 12 16 / 0.84);
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sh__play:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.sh__external {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  min-height: 44px;
+  color: var(--accent-ink);
+  font-size: 13px;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.sh__external:hover {
+  color: var(--ink);
+}
 .sh__shot--contain img {
   padding: 6%;
   object-fit: contain;

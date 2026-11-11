@@ -4,11 +4,11 @@ import type { Faq } from './schema'
 export const faqs = {
   whatYouBuild: {
     question: 'What kinds of projects do you take on?',
-    answer: 'I specialize in graphic design (publication materials, event posters, identity suites), video editing (university promos, event features, short films), and IT solutions including web development and technical support.',
+    answer: 'My main focus is short and long-form video editing, AI-assisted ads, and motion graphics. I also take on social graphics, campus visuals, and select web or technical projects.',
   },
   startSpeed: {
     question: 'How fast can you start on a project?',
-    answer: 'For fast-turnaround event graphics or quick video edits, I can usually begin within 24 to 48 hours. Larger multi-asset campaigns and websites are planned with clear milestones.',
+    answer: 'Availability depends on the project and current schedule. Send the deliverables and target date, and I will confirm a realistic timeline.',
   },
   needStack: {
     question: 'What software and formats do you deliver in?',
@@ -20,7 +20,7 @@ export const faqs = {
   },
   afterWrite: {
     question: 'What happens after I get in touch?',
-    answer: 'I will reply within 24 hours to confirm your project requirements, delivery timeline, and provide a clear quote and kickoff schedule.',
+    answer: 'I will review the details you send and reply with next steps, timeline, and scope questions.',
   },
 } satisfies Record<string, Faq>
 

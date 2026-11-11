@@ -89,6 +89,10 @@ They read `BASE` (default `http://localhost:5190`). Screenshots land in `scripts
 
 It is a static single-page app: `npm run build` and serve `dist/` with every unknown path falling back to `index.html`.
 
+### Live visit counter on Vercel
+
+The footer counter uses the `/api/visits` function and Upstash Redis so the total is shared across visitors. Create an Upstash Redis database and add `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` as Vercel environment variables, then redeploy. The token is read only by the serverless function. Until both variables are set, the counter stays hidden.
+
 `deploy/` holds an nginx example with strict security headers: `nginx.conf` (the site), `headers.conf` (CSP, HSTS and friends for the app) and `demos-headers.conf` (looser rules for the standalone demo pages). The CSP allows the one inline theme script in `index.html` by its hash. If you edit that script, run `npm run csp:check` and put the hash it prints into `deploy/headers.conf`.
 
 ## Notes

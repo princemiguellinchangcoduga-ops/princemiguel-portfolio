@@ -2,8 +2,8 @@ import type { AppBuild, Demo, Image, LinkRef, WorkItem } from './schema'
 
 export const workPage = {
   eyebrow: 'Work',
-  title: 'Real designs & builds you can open.',
-  lede: 'Explore graphic design publications, video production edits, live websites, and computer science systems.',
+  title: 'Video, AI ads, and creative work.',
+  lede: 'Explore creator edits, AI-assisted advertising, campus visuals, web work, and selected Computer Science projects.',
 }
 
 /* ---------- Image Helper Functions ---------- */
@@ -57,24 +57,36 @@ export const aseanVideo: WorkItem = {
 
 export const aiVideoProjects: WorkItem[] = [
   {
-    id: 'video-drive-2',
-    name: 'AI Commercial & Ad Production',
-    kicker: 'AI Commercial Spot',
-    group: 'Generative AI Commercials',
-    summary: 'Modern vertical commercial spot combining generative AI video scenes, synthetic voiceover, dynamic picture-in-picture talking-head avatar, and crisp sales copy.',
-    stack: 'Higgsfield · Kling · Runway · ElevenLabs · CapCut',
-    image: cover('video-drive-2', 'AI Commercial & Ad Production', 'video thumbnail'),
-    href: 'https://drive.google.com/file/d/1QwhfMAo6E3WIo5MQ2C8d8KwJmj_Snd-J/view?usp=sharing',
+    id: 'ai-ads-collection',
+    name: 'AI-Assisted Ad Collection',
+    kicker: 'AI Ads · UGC Style',
+    group: 'AI Ads & Motion Graphics',
+    summary: 'A collection of AI-assisted product ads and UGC-style video experiments, with three campaign cuts available in Drive.',
+    stack: 'Higgsfield · Kling · Runway · Veo · ElevenLabs · CapCut',
+    image: { src: '/images/covers/ai-ads-collection.svg', alt: 'AI-assisted advertising collection artwork', width: 1600, height: 1000 },
+    href: 'https://drive.google.com/drive/folders/1n4kcWRd7i8FPLGhbg4HqXQnUbOrXzuIA?usp=drive_link',
   },
   {
-    id: 'video-drive-3',
-    name: 'AI Horror Cinematic Short',
-    kicker: 'AI Cinematic Short',
-    group: 'Generative AI Cinema',
-    summary: 'Atmospheric cinematic horror short crafted using generative AI visual prompting, eerie audio soundscapes, and tension-building pacing.',
-    stack: 'Runway · Kling · ElevenLabs · CapCut',
-    image: cover('video-drive-3', 'AI Horror Cinematic Short', 'video thumbnail'),
-    href: 'https://drive.google.com/file/d/1aAJe1ytk00-KU_U2OAD3cp8tlujAZ4kz/view?usp=sharing',
+    id: 'ai-motion-north-yard',
+    name: 'North Yard — AI Motion Graphic',
+    kicker: 'AI Motion Graphic',
+    group: 'AI Ads & Motion Graphics',
+    summary: 'A motion-led concept video for the North Yard Pickleball System, previewable right here in the portfolio.',
+    stack: 'AI-assisted visuals · Motion editing · Sound',
+    image: { src: '/images/covers/ai-motion-north-yard.svg', alt: 'North Yard pickleball system motion graphic artwork', width: 1600, height: 1000 },
+    href: 'https://drive.google.com/file/d/14og5AoNfYd4cjUrj9A5KOYD7_ptR52Ql/view?usp=drive_link',
+    previewUrl: 'https://drive.google.com/file/d/14og5AoNfYd4cjUrj9A5KOYD7_ptR52Ql/preview',
+  },
+  {
+    id: 'ai-chew-powder',
+    name: 'Chew Powder — AI Product Ad',
+    kicker: 'AI Product Ad',
+    group: 'AI Ads & Motion Graphics',
+    summary: 'An AI-assisted product spot for a chew powder, with a playable preview embedded in the portfolio.',
+    stack: 'AI-assisted video · Product storytelling · CapCut',
+    image: { src: '/images/covers/chew-powder-ad.svg', alt: 'Chew powder product ad artwork', width: 1600, height: 1000 },
+    href: 'https://drive.google.com/file/d/1Ds5h-dk2ZHy-bhvXDXsMzyTTTfWFlB-x/view?usp=drive_link',
+    previewUrl: 'https://drive.google.com/file/d/1Ds5h-dk2ZHy-bhvXDXsMzyTTTfWFlB-x/preview',
   },
 ]
 
@@ -117,10 +129,20 @@ export const commercialEdits: WorkItem[] = [
 
 export const youtubeEdits: WorkItem[] = [
   {
+    id: 'dark-barrio-stories',
+    name: '@Darkbarriostories',
+    kicker: 'Personal YouTube Channel',
+    group: 'YouTube & Creator Edits',
+    summary: 'Documentary-style storytelling with B-roll and conversational edits, made for my own channel.',
+    stack: 'YouTube · Short-form · Long-form · CapCut',
+    image: { src: '/images/covers/dark-barrio-stories.svg', alt: 'Dark Barrio Stories YouTube channel artwork', width: 1600, height: 1000 },
+    href: 'https://www.youtube.com/@Darkbarriostories',
+  },
+  {
     id: 'video-drive-6',
     name: 'Retro VHS Long-Form YouTube Edit',
     kicker: 'Retro VHS Aesthetic',
-    group: 'Long-Form YouTube Production',
+    group: 'YouTube & Creator Edits',
     summary: 'Stylized retro VHS video treatment for long-form discussion and documentary content, incorporating authentic scanlines, retro subtitles, and archival atmosphere.',
     stack: 'Premiere Pro · CapCut · VHS Aesthetics',
     image: cover('video-drive-6', 'Retro VHS Long-Form YouTube Edit', 'video thumbnail'),
@@ -130,7 +152,7 @@ export const youtubeEdits: WorkItem[] = [
     id: 'video-drive-7',
     name: 'Clean YouTube Long-Form Interview Edit',
     kicker: 'Clean Multi-Cam Cuts',
-    group: 'Long-Form YouTube Production',
+    group: 'YouTube & Creator Edits',
     summary: 'Polished interview and talking-head YouTube edit featuring clean multicam cuts, noise removal, professional color correction, and smooth narrative pacing.',
     stack: 'Premiere Pro · CapCut · Clean Cuts',
     image: cover('video-drive-7', 'Clean YouTube Long-Form Interview Edit', 'video thumbnail'),
@@ -233,7 +255,7 @@ export const graphicDesigns: WorkItem[] = [
     group: 'Featured Highlight',
     summary: 'Commemorative class tribute and stage backdrop celebrating the graduating BS Computer Science Class of 2024 at Northern Iloilo State University.',
     image: screen('screen-9', '5th Commencement Exercises Software Elites', 1600, 900),
-    href: 'https://www.facebook.com/PrinceMiguelDuga',
+    href: 'https://www.facebook.com/princemiguel.duga/',
   },
   {
     id: 'led-wall-event',
@@ -318,7 +340,7 @@ export const graphicDesigns: WorkItem[] = [
     group: 'Campus Initiatives & Publications',
     summary: 'Heartwarming social outreach campaign and collage poster raising school supplies and art materials for local schoolchildren.',
     image: cover('case-study-2', 'Writing Their Future Annual Donation Drive', 'cover'),
-    href: 'https://www.facebook.com/PrinceMiguelDuga',
+    href: 'https://www.facebook.com/princemiguel.duga/',
   },
   {
     id: 'initiative-updates',
@@ -387,7 +409,7 @@ export const graphicDesigns: WorkItem[] = [
     group: 'Esports & Visual Identity',
     summary: 'Cyberpunk-inspired tournament roster posters created for Mobile Legends competitive teams.',
     image: screen('screen-6', 'Sawarabinoman & EAJ 1Aspera Esports Posters', 1600, 900),
-    href: 'https://www.facebook.com/PrinceMiguelDuga',
+    href: 'https://www.facebook.com/princemiguel.duga/',
   },
   {
     id: 'brand-phoenix',
@@ -414,7 +436,7 @@ export const caseStudies = [
     id: 'case-study-2',
     title: 'Writing Their Future — Annual Donation Drive',
     summary: 'Heartwarming collage poster and social campaign supporting local children with educational and art materials.',
-    link: { label: 'View Campaign on Facebook', href: 'https://www.facebook.com/PrinceMiguelDuga', external: true } satisfies LinkRef,
+    link: { label: 'View Campaign on Facebook', href: 'https://www.facebook.com/princemiguel.duga/', external: true } satisfies LinkRef,
   },
 ]
 
@@ -448,7 +470,7 @@ export const sampleSites: Demo[] = [
     'site-2',
     'NISU Main SSC Information Hub',
     'Web Portal',
-    'Official digital portal for the Supreme Student Council with announcements, officer directory, and student resources.',
+    'Student information website for the NISU Supreme Student Council, built with HTML, CSS, Java, and MySQL.',
     'https://nisumainsupremestudentcouncil.page.gd/',
   ),
   demo(
@@ -472,8 +494,8 @@ export const apps: AppBuild[] = [
     name: 'TingaFresh ML',
     kind: 'Machine Learning & Computer Vision',
     tagline: 'Computer vision pen shell freshness classification.',
-    summary: 'BS Computer Science thesis research applying convolutional neural network classification and computer vision algorithms to evaluate the freshness levels of pen shells (Atrina pectinata / tinga) directly from camera images.',
-    stack: 'Python · OpenCV · TensorFlow · Mobile ML',
+    summary: 'Computer Science thesis app using machine learning to predict pen shell freshness from images.',
+    stack: 'Python · Kotlin · Android Studio',
     status: 'Live',
   },
   {
@@ -481,8 +503,8 @@ export const apps: AppBuild[] = [
     name: 'SmartPark IoT',
     kind: 'IoT & Embedded Systems',
     tagline: 'Automated sensor-based campus parking management.',
-    summary: 'Applied hardware engineering system utilizing ultrasonic distance sensors, microcontroller circuitry, and real-time display logic to monitor parking slot availability and guide campus motorists automatically.',
-    stack: 'ESP32 / Arduino · Ultrasonic Sensors · C++ · IoT Dashboard',
+    summary: 'Automatic parking lot prototype built to track available spaces and support parking management.',
+    stack: 'Arduino · Raspberry Pi',
     status: 'Live',
   },
   {
@@ -490,9 +512,18 @@ export const apps: AppBuild[] = [
     name: 'FaceLog Attendance',
     kind: 'Computer Vision & Biometrics',
     tagline: 'Contactless automated facial recognition attendance.',
-    summary: 'Automated attendance logging system powered by facial detection and identification algorithms to record student attendance logs reliably without physical touchpoints.',
-    stack: 'Python · OpenCV · FaceNet · SQLite',
+    summary: 'Face recognition attendance prototype that recorded 15 students at about 1.4 seconds per person.',
+    stack: 'Python · Face Recognition · Attendance System',
     status: 'Beta',
+  },
+  {
+    id: 'wv-ai-hackathon',
+    name: 'Western Visayas AI Hackathon 2025',
+    kind: 'AI Hackathon',
+    tagline: 'Co-created and pitched an algorithm with a team.',
+    summary: 'Collaborated on an algorithm and pitched it at the Western Visayas AI Hackathon 2025.',
+    stack: 'Algorithm design · AI · Team pitch',
+    status: 'Live',
   },
 ]
 
@@ -515,10 +546,10 @@ export const sideProjects = [
 /** Number of builds across every Work chapter, shown as the sidebar badge. Derived, never typed in. */
 export const workCount =
   1 + // Featured Video Edit (ASEAN Creators)
-  aiVideoProjects.length + // 2 AI videos
+  aiVideoProjects.length + // AI ad collection, motion graphic and product ad
   commercialEdits.length + // 3 Commercial edits
-  youtubeEdits.length + // 2 YouTube edits
+  youtubeEdits.length + // YouTube creator edits and personal channel
   campusVideos.length + // 6 Campus videos
   sampleSites.length + // 3 Web portals
-  apps.length + // 3 IT systems
+  apps.length + // technical and AI projects
   graphicDesigns.length // 18 Graphic designs

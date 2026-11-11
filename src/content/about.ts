@@ -10,13 +10,13 @@ export const aboutSection = {
   eyebrow: 'About',
   titleThin: "Hi, I'm",
   titleBold: `${site.name}.`,
-  lede: "Creative Video Editor & BSCS Magna Cum Laude — crafting retention-driven edits and generative AI media.",
-  lead: 'Creative Video Editor & CS Magna Cum Laude graduate crafting high-retention visual stories.',
-  leadQuiet: '2+ years directing campus media, AI video workflows, and viral short-form edits.',
+  lede: 'Creative video editor and AI ad maker with a Computer Science background, based in Estancia, Iloilo.',
+  lead: 'I edit short and long-form videos, build AI-assisted ads, and shape graphics for digital and campus audiences.',
+  leadQuiet: 'B.S. Computer Science · Magna Cum Laude · NISU Supreme Student Council media leader.',
   note: {
     company: 'Northern Iloilo State University',
     product: { label: 'Supreme Student Council', href: externalLinks.company },
-    rest: 'where I directed campus media publications, stage visual assets, and IT initiatives (Magna Cum Laude, GWA: 1.41).',
+    rest: 'where I managed social media for two years and led creative and IT work as Governor (2024–2025), then Senator and IT Committee Head (2025–2026).',
   },
   picture: {
     src: '/images/profile/desk.webp',
@@ -46,7 +46,7 @@ export type AboutCredential = {
 
 export const credentials: AboutCredential[] = [
   { id: 'cert', title: certification.title, detail: certification.detail, image: { ...certification.image!, alt: '' }, href: site.resumeDriveUrl },
-  { id: 'place', title: `Based ${site.timePlace}`, detail: 'Asia/Manila (GMT+8) · Available worldwide' },
+  { id: 'place', title: `Based ${site.timePlace}`, detail: 'Asia/Manila (GMT+8)' },
   {
     id: 'partner',
     title: 'ASEAN Creators 3rd Place',
