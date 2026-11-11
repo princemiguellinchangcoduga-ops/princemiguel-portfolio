@@ -190,7 +190,7 @@ export const workChapters: WorkChapter[] = [
     line: 'Machine learning research & IoT prototypes.',
     count: apps.length,
     unit: 'systems',
-    description: 'Machine learning pen shell freshness classifier, automated smart parking, and face recognition systems.',
+    description: 'The North Yard pickleball system, a machine-learning pen shell app, automatic parking and face-recognition projects, plus an AI hackathon pitch.',
     marks: [tools.toolG, tools.toolH, tools.toolK],
     items: apps.map((app) => ({
       id: app.id,
@@ -199,6 +199,7 @@ export const workChapters: WorkChapter[] = [
       summary: app.summary,
       stack: app.stack,
       status: app.status,
+      image: app.image,
     })),
   },
 ]

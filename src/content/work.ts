@@ -486,9 +486,18 @@ export const sampleSites: Demo[] = [
 export const funnelPages: Demo[] = []
 export const bookingPages: Demo[] = []
 
-/* ---------- Apps (IT Systems & ML) — Pure text descriptions only, NO UI mockups ---------- */
+/* ---------- Apps (IT Systems & ML) ---------- */
 
 export const apps: AppBuild[] = [
+  {
+    id: 'north-yard-system',
+    name: 'North Yard Pickleball System',
+    kind: 'Court Booking & Management System',
+    tagline: 'A booking and live court-management experience for North Yard.',
+    summary: 'Created a pickleball system interface for court bookings, live court status, player lists, and queue information.',
+    stack: 'Court booking · Live court status · Player queue',
+    image: { src: '/images/covers/ai-motion-north-yard.webp', alt: 'North Yard Pickleball System interface with court and queue views', width: 1600, height: 1000 },
+  },
   {
     id: 'app-1',
     name: 'TingaFresh ML',
@@ -496,7 +505,7 @@ export const apps: AppBuild[] = [
     tagline: 'Computer vision pen shell freshness classification.',
     summary: 'Computer Science thesis app using machine learning to predict pen shell freshness from images.',
     stack: 'Python · Kotlin · Android Studio',
-    status: 'Live',
+    image: { src: '/images/covers/tingafresh-ml.webp', alt: 'Pen shells shown with a computer-vision scan interface', width: 1600, height: 1000 },
   },
   {
     id: 'app-2',
@@ -505,7 +514,7 @@ export const apps: AppBuild[] = [
     tagline: 'Automated sensor-based campus parking management.',
     summary: 'Automatic parking lot prototype built to track available spaces and support parking management.',
     stack: 'Arduino · Raspberry Pi',
-    status: 'Live',
+    image: { src: '/images/covers/smartpark-iot.webp', alt: 'Parking lot with sensor markers and an availability dashboard', width: 1600, height: 1000 },
   },
   {
     id: 'app-3',
@@ -514,7 +523,7 @@ export const apps: AppBuild[] = [
     tagline: 'Contactless automated facial recognition attendance.',
     summary: 'Face recognition attendance prototype that recorded 15 students at about 1.4 seconds per person.',
     stack: 'Python · Face Recognition · Attendance System',
-    status: 'Beta',
+    image: { src: '/images/covers/facelog-attendance.webp', alt: 'Campus check-in kiosk with privacy-conscious face-detection framing', width: 1600, height: 1000 },
   },
   {
     id: 'wv-ai-hackathon',
@@ -523,7 +532,7 @@ export const apps: AppBuild[] = [
     tagline: 'Co-created and pitched an algorithm with a team.',
     summary: 'Collaborated on an algorithm and pitched it at the Western Visayas AI Hackathon 2025.',
     stack: 'Algorithm design · AI · Team pitch',
-    status: 'Live',
+    image: { src: '/images/covers/wv-ai-hackathon.webp', alt: 'Team presenting an algorithm flow at a hackathon showcase', width: 1600, height: 1000 },
   },
 ]
 
