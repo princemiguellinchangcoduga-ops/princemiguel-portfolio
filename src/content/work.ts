@@ -532,7 +532,7 @@ export const apps: AppBuild[] = [
     tagline: 'Co-created and pitched an algorithm with a team.',
     summary: 'Collaborated on an algorithm and pitched it at the Western Visayas AI Hackathon 2025.',
     stack: 'Algorithm design · AI · Team pitch',
-    image: { src: '/images/covers/wv-ai-hackathon.webp', alt: 'Team presenting an algorithm flow at a hackathon showcase', width: 1600, height: 1000 },
+    image: { src: '/images/covers/wv-ai-hackathon.webp', alt: 'Prince Miguel Duga and his teammates at the Western Visayas AI Hackathon', width: 1600, height: 1000 },
   },
 ]
 
