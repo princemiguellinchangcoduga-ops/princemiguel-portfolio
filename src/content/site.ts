@@ -31,6 +31,8 @@ export const site = {
   avatar: { src: '/images/profile/avatar.webp', alt: 'Prince Miguel Duga', width: 400, height: 400 },
   /** The sidebar picture (112px, 44px on the rail). */
   avatarSmall: '/images/profile/avatar-224.webp',
+  avatarDark: { src: '/images/profile/avatar-dark.webp', alt: 'Prince Miguel Duga', width: 400, height: 400 },
+  avatarSmallDark: '/images/profile/avatar-dark-224.webp',
   resumeUrl: '/documents/Prince_Miguel_Duga_Resume_Video_Editor.pdf',
   resumeDriveUrl: 'https://drive.google.com/file/d/1-13eBuiIFeQ5iz15dxR2PvJXaLGUOAz5/view?usp=sharing',
 } as const

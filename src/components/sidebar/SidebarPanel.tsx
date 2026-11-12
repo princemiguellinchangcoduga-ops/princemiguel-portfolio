@@ -58,7 +58,8 @@ export function SidebarPanel({ variant, collapsed = false, onNavigate, onHoverCh
           onBlur={clearHover}
         >
           <span className="sb-pic">
-            <img className="sb-pic__img" src={site.avatarSmall} alt="" width={224} height={224} />
+            <img className="sb-pic__img only-light" src={site.avatarSmall} alt="" width={224} height={224} />
+            <img className="sb-pic__img only-dark" src={site.avatarSmallDark} alt="" width={224} height={224} />
             <span className="sb-pic__check" aria-hidden>
               <SealCheck weight="fill" />
             </span>
