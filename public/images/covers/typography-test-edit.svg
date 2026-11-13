@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="1450" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13283A"/>
+      <stop offset="1" stop-color="#08111A"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="115" y1="710" x2="1465" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#69D6FF"/>
+      <stop offset=".52" stop-color="#A3B9FF"/>
+      <stop offset="1" stop-color="#F4A7E6"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#D7E5EE" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#87A6BB" stop-opacity=".03"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="36" fill="url(#bg)"/>
+  <circle cx="1310" cy="180" r="390" fill="#5081A4" fill-opacity=".11"/>
+  <path d="M0 710 360 510l205 86 220-236 220 194 320-273 275 154" stroke="url(#beam)" stroke-opacity=".52" stroke-width="3"/>
+  <path d="M0 772 360 572l205 86 220-236 220 194 320-273 275 154" stroke="url(#beam)" stroke-opacity=".16" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="96" y="112" fill="#9DB8CA" font-size="19" font-weight="700" letter-spacing="7">MOTION &amp; TYPOGRAPHY REELS</text>
+    <rect x="96" y="152" width="112" height="4" rx="2" fill="url(#beam)"/>
+    <text x="92" y="434" fill="#F4F7FA" font-size="226" font-weight="800" letter-spacing="-15">TYPE</text>
+    <text x="105" y="505" fill="#B8CBD8" font-size="29" font-weight="600" letter-spacing="6">CLIENT TEST EDIT · B-ROLL</text>
+    <text x="1278" y="418" fill="#F4F7FA" fill-opacity=".12" font-size="174" font-weight="800" letter-spacing="-12">TYPE</text>
+  </g>
+  <g transform="translate(96 650)">
+    <rect width="1408" height="214" rx="22" fill="url(#glass)" stroke="#648299" stroke-opacity=".42" stroke-width="2"/>
+    <text x="32" y="48" fill="#A8BECE" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="5">EDIT TIMELINE</text>
+    <rect x="32" y="76" width="372" height="66" rx="10" fill="#1A4057" stroke="#70D7F7" stroke-opacity=".7"/>
+    <rect x="420" y="76" width="292" height="66" rx="10" fill="#333A5A" stroke="#B2C2FF" stroke-opacity=".7"/>
+    <rect x="728" y="76" width="425" height="66" rx="10" fill="#4B3355" stroke="#F2A8E2" stroke-opacity=".7"/>
+    <rect x="1169" y="76" width="207" height="66" rx="10" fill="#1A4057" stroke="#70D7F7" stroke-opacity=".7"/>
+    <g fill="#F3F7FA" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">
+      <text x="56" y="118">KINETIC TYPE</text>
+      <text x="444" y="118">B-ROLL</text>
+      <text x="752" y="118">STORY BEATS</text>
+      <text x="1193" y="118">CUT</text>
+    </g>
+    <path d="M32 176h1344" stroke="#A9BECF" stroke-opacity=".18" stroke-width="2"/>
+    <path d="M92 163v28m224-28v28m224-28v28m224-28v28m224-28v28m224-28v28" stroke="#A9BECF" stroke-opacity=".34" stroke-width="2"/>
+    <circle cx="386" cy="176" r="7" fill="#74D9F5"/>
+  </g>
+</svg>

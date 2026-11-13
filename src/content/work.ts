@@ -123,6 +123,17 @@ export const commercialEdits: WorkItem[] = [
     image: cover('video-drive-4', 'Kinetic Typography & Motion Edit', 'video thumbnail'),
     href: 'https://drive.google.com/file/d/1Ju_H3jRWk8wOgVy5_LHKeP7LZUIAD-o5/view?usp=sharing',
   },
+  {
+    id: 'video-drive-8',
+    name: 'Client Typography Test Edit',
+    kicker: 'Client Typography Test',
+    group: 'Motion & Typography Reels',
+    summary: 'A client typography test edit pairing animated text with supporting B-roll.',
+    stack: 'CapCut · Kinetic Typography · B-roll',
+    image: { src: '/images/covers/typography-test-edit.svg', alt: 'Graphic preview for a client typography test edit with B-roll', width: 1600, height: 1000 },
+    href: 'https://drive.google.com/file/d/1cCLwIHWSjwbi90dY6E0VmYxlZ7kqXdgS/view?usp=drive_link',
+    previewUrl: 'https://drive.google.com/file/d/1cCLwIHWSjwbi90dY6E0VmYxlZ7kqXdgS/preview',
+  },
 ]
 
 /* ---------- YouTube Long-Form Edits Variations ---------- */
